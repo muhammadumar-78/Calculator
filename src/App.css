@@ -1,0 +1,159 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  min-height: 90vh;
+  border-radius: 20px;
+  width: 30%;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease;
+}
+
+/* Light mode styles */
+.calculator.light {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.calculator.light h2 {
+  color: white;
+}
+
+.calculator.light .display-container {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.calculator.light .secondary-display {
+  color: #999;
+}
+
+.calculator.light .buttons button {
+  background: white;
+  color: #333;
+}
+
+.calculator.light .buttons button:hover {
+  background: #e0e0e0;
+}
+
+/* Dark mode styles */
+.calculator.dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.calculator.dark h2 {
+  color: #e0e0e0;
+}
+
+.calculator.dark .display-container {
+  background: #2d2d44;
+  color: #e0e0e0;
+  border: 2px dotted white;
+}
+
+.calculator.dark .secondary-display {
+  color: #b5b5b5;
+  font-size: 18px;
+}
+
+.calculator.dark .buttons button {
+  background: #3d3d5c;
+  color: #e0e0e0;
+}
+
+.calculator.dark .buttons button:hover {
+  background: #4d4d7c;
+}
+
+.calculator h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* Single display container with stacked content inside */
+.display-container {
+  
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 65%;
+  transition: all 0.3s ease;
+  
+}
+
+.display-content {
+  display: flex;
+  width: 98%;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 5px;
+}
+
+.secondary-display {
+  color: grey;
+  font-size: 18px;
+  text-align: right;
+  min-height: 20px;
+  transition: all 0.3s ease;
+}
+
+.primary-display {
+  font-size: 28px;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+.Equalbtn{
+  width: 270px;
+}
